@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/casino_table">
+
     <TextView
         android:id="@+id/betTotal"
         android:layout_width="wrap_content"
@@ -11,7 +12,8 @@
         android:layout_centerHorizontal="true"
         android:textSize="30dp"
         android:textColor="@android:color/white"
-        android:text="Cash Total:£3000"/>
+        android:text="Cash Total:£3000" />
+
     <TextView
         android:id="@+id/cashTotal"
         android:layout_width="wrap_content"
@@ -22,6 +24,7 @@
         android:layout_above="@+id/one"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="62dp" />
+
     <ImageButton
         android:id="@+id/one"
         android:layout_width="80dp"
@@ -30,7 +33,14 @@
         android:onClick="plusOne"
         android:layout_alignTop="@+id/five"
         android:layout_toLeftOf="@+id/five"
-        android:layout_toStartOf="@+id/five" />
+        android:layout_toStartOf="@+id/five"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:elevation="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
     <ImageButton
         android:id="@+id/five"
         android:layout_width="80dp"
@@ -38,7 +48,14 @@
         android:background="@drawable/chip_five"
         android:onClick="plusFive"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:elevation="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
     <ImageButton
         android:id="@+id/twenty_five"
         android:layout_width="80dp"
@@ -47,7 +64,14 @@
         android:onClick="plusTwentyFive"
         android:layout_alignTop="@+id/five"
         android:layout_toRightOf="@+id/five"
-        android:layout_toEndOf="@+id/five" />
+        android:layout_toEndOf="@+id/five"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:elevation="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
     <ImageButton
         android:id="@+id/fifty"
         android:layout_width="80dp"
@@ -56,7 +80,14 @@
         android:onClick="plusFifty"
         android:layout_below="@+id/one"
         android:layout_toLeftOf="@+id/five"
-        android:layout_toStartOf="@+id/five" />
+        android:layout_toStartOf="@+id/five"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:elevation="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
     <ImageButton
         android:id="@+id/hundred"
         android:layout_width="80dp"
@@ -65,7 +96,14 @@
         android:onClick="plusHundred"
         android:layout_below="@+id/five"
         android:layout_toRightOf="@+id/five"
-        android:layout_toEndOf="@+id/five" />
+        android:layout_toEndOf="@+id/five"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:elevation="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
     <Button
         android:id="@+id/clear"
         android:layout_width="120dp"
@@ -79,7 +117,12 @@
         android:text="Clear"
         android:layout_below="@+id/deal"
         android:layout_alignLeft="@+id/deal"
-        android:layout_alignStart="@+id/deal" />
+        android:layout_alignStart="@+id/deal"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:elevation="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
     <Button
         android:id="@+id/deal"
         android:layout_width="120dp"
@@ -90,6 +133,10 @@
         android:textSize="20dp"
         android:text="Deal"
         android:layout_below="@+id/fifty"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:elevation="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
 
 </RelativeLayout>
